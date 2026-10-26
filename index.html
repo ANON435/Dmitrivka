@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f39">
+  <meta name="description" content="Офіційний вебсайт Дмитрівської сільської територіальної громади: новини, послуги, документи, звернення громадян та контакти.">
+  <title>Дмитрівська сільська територіальна громада</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+
+  <header class="site-header" role="banner">
+    <div class="topbar" aria-label="Панель доступності та контактів">
+      <div class="container topbar-inner">
+        <div class="header-contact" aria-label="Контакти сільської ради">
+          <small>Гаряча лінія</small>
+          <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+        </div>
+        <div class="topbar-tools" aria-label="Налаштування доступності">
+          <button class="topbar-btn" type="button" data-font-action="decrease" aria-label="Зменшити текст">Менший текст</button>
+          <button class="topbar-btn" type="button" data-font-action="increase" aria-label="Збільшити текст">Більший текст</button>
+          <button class="topbar-btn" type="button" data-contrast-toggle aria-label="Увімкнути або вимкнути контрастний режим" aria-pressed="false">Контраст</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-inner">
+      <a class="brand" href="#main-content" aria-label="Головна сторінка Дмитрівської сільської територіальної громади">
+        <img class="brand-logo" src="logo.png" alt="Герб Дмитрівської сільської територіальної громади">
+        <span class="brand-text">
+          <span class="brand-name">Дмитрівська сільська територіальна громада</span>
+          <span class="brand-caption">Кропивницького району, Кіровоградської області</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Головна навігація" id="main-nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Відкрити меню навігації">Меню</button>
+        <ul class="nav-list" id="site-menu">
+          <li><a href="#about">Про громаду</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#documents">Рішення та документи</a></li>
+          <li><a href="#budget">Бюджет</a></li>
+          <li><a href="#news">Новини</a></li>
+          <li><a href="#contacts">Звернення</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="photo-slider" aria-label="Фотографії природи" aria-roledescription="карусель">
+      <div class="photo-slider-slides">
+        <figure class="photo-slide" role="group" aria-roledescription="слайд" aria-label="1 з 2">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2400&q=85" alt="Зелений луг і поля під широким небом">
+          <figcaption>Природа нашого краю</figcaption>
+        </figure>
+        <figure class="photo-slide" role="group" aria-roledescription="слайд" aria-label="2 з 2" hidden>
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85" alt="Гірське озеро серед зелених схилів і лісу">
+          <figcaption>Краєвиди України</figcaption>
+        </figure>
+      </div>
+      <div class="photo-slider-controls">
+        <button class="photo-slider-button" type="button" data-slide-direction="-1" aria-label="Попереднє фото">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <span class="photo-slider-status" aria-live="polite">1 / 2</span>
+        <button class="photo-slider-button" type="button" data-slide-direction="1" aria-label="Наступне фото">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="announcements-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="announcements-title">Важливі оголошення</h2>
+          <a class="section-link" href="#news">Усі новини</a>
+        </div>
+
+        <div class="notice-grid">
+          <article class="notice-card featured">
+            <span class="notice-meta">Актуально</span>
+            <h3>Графік особистого прийому громадян</h3>
+            <p>Надано новий розклад прийомів у приміщенні ради, а також порядок попередньої реєстрації.</p>
+          </article>
+
+          <article class="notice-card">
+            <span class="notice-meta">Рішення</span>
+            <h3>Оприлюднено рішення ради</h3>
+            <p>Рішення щодо благоустрою, міської інфраструктури та підтримки соціально вразливих категорій громадян.</p>
+          </article>
+
+          <article class="notice-card">
+            <span class="notice-meta">Підтримка</span>
+            <h3>Підтримка малого бізнесу</h3>
+            <p>У громади працює новий механізм підтримки підприємців та ініціатив, спрямованих на розвиток села.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="services-title">Популярні послуги</h2>
+          <a class="section-link" href="#documents">Всі послуги</a>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10l3 3v13H7zM14 4v4h5M10 12h6M10 16h6"/></svg>
+            </div>
+            <h3>Довідки</h3>
+            <p>Отримання довідок про особу, житлові, соціальні та інші актуальні питання.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 20v-6h6v6"/></svg>
+            </div>
+            <h3>Земельні питання</h3>
+            <p>Консультації щодо земельних ділянок, кадастру, землекористування та дозвільних процедур.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/></svg>
+            </div>
+            <h3>Податки</h3>
+            <p>Інформація про податкові розрахунки, процедури сплати та актуальні питання для платників.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 10h8m-8 4h8M9 5h6l4 4v10H5V5h4Z"/></svg>
+            </div>
+            <h3>Звернення</h3>
+            <p>Подання скарг, пропозицій, заяв та запитів до органів місцевого самоврядування.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="about-title">Про громаду</h2>
+          <a class="section-link" href="#contacts">Контакти</a>
+        </div>
+
+        <div class="lead-grid">
+          <article class="lead-card lead-feature">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=80" alt="Будівля сільської ради серед зелених насаджень">
+            <div class="lead-body">
+              <span class="lead-badge">Керівництво</span>
+              <h3>Розвиток громади — у руках людей</h3>
+              <p>Ми працюємо відповідально, відкрито та системно, аби забезпечити мешканцям якісні послуги, стабільну роботу інфраструктури та прозорий розвиток усього територіального об'єднання.</p>
+            </div>
+          </article>
+
+          <aside class="news-card" aria-label="Останні новини">
+            <div class="news-list">
+              <article class="news-item">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Люди працюють разом над спільним проєктом">
+                <div>
+                  <span class="date">08 жовтня</span>
+                  <h4>Партнерство для розвитку освітніх ініціатив</h4>
+                </div>
+              </article>
+
+              <article class="news-item">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Громадська будівля та сучасна інфраструктура">
+                <div>
+                  <span class="date">03 жовтня</span>
+                  <h4>Розширення комунальної інфраструктури</h4>
+                </div>
+              </article>
+
+              <article class="news-item">
+                <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=700&q=80" alt="Жінки та чоловіки на відкритій зустрічі громади">
+                <div>
+                  <span class="date">29 вересня</span>
+                  <h4>Обговорення пріоритетів розвитку громади</h4>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="documents" aria-labelledby="documents-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="documents-title">Рішення та документи</h2>
+          <a class="section-link" href="#budget">Бюджет</a>
+        </div>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>План роботи</h3>
+            <p>Планові документи, пріоритети розвитку та маршрути реалізації проєктів громади.</p>
+          </article>
+          <article class="doc-card">
+            <h3>Публічні рішення</h3>
+            <p>Відкриті рішення ради, розпорядження, постанови та регуляторні акти.</p>
+          </article>
+          <article class="doc-card" id="budget">
+            <h3>Бюджет громади</h3>
+            <p>Фінансові плани, звіти, бюджети та розпорядження щодо використання коштів громади.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="call-title">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <p class="eyebrow" style="color: var(--accent); margin-bottom: 12px;">Оперативно</p>
+            <h2 id="call-title">Публічна інформація та звернення громадян</h2>
+            <p>Ми відкриті до діалогу, оперативно надаємо інформацію та забезпечуємо прозорий механізм взаємодії з мешканцями.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button secondary" href="#contacts">Подати звернення</a>
+            <a class="button" href="#documents">Переглянути документи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contact-grid">
+        <article class="contact-card">
+          <h3 id="contacts-title">Контакти та прийом громадян</h3>
+          <div class="contact-list">
+            <div class="contact-row">
+              <strong>Адреса</strong>
+              <span>с. Дмитрівка, Кропивницький район, Кіровоградська область</span>
+            </div>
+            <div class="contact-row">
+              <strong>Телефон</strong>
+              <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+            </div>
+            <div class="contact-row">
+              <strong>E-mail</strong>
+              <a href="mailto:rada@example.ua">rada@example.ua</a>
+            </div>
+            <div class="contact-row">
+              <strong>Графік роботи</strong>
+              <span>Пн–Чт: 08:00–17:00, Пт: 08:00–16:00, обід: 12:00–13:00</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="contact-card" aria-label="Онлайн звернення">
+          <h3>Звернення громадян</h3>
+          <div class="contact-list">
+            <div class="contact-row">
+              <strong>Онлайн</strong>
+              <a href="#contacts">Подати звернення</a>
+            </div>
+            <div class="contact-row">
+              <strong>Особисто</strong>
+              <span>Особистий прийом проводиться за попередньою домовленістю.</span>
+            </div>
+            <div class="contact-row">
+              <strong>Доступність</strong>
+              <a href="#main-content">Перейти до основного вмісту</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand">
+            <img class="brand-logo" src="logo.png" alt="Герб Дмитрівської сільської територіальної громади">
+            <div class="brand-text">
+              <span class="brand-name">Дмитрівська сільська територіальна громада</span>
+            </div>
+          </div>
+          <p class="footer-copy">Офіційна інформація для мешканців, партнерів, підприємців та гостей громади.</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Навігація</h3>
+          <ul class="footer-list">
+            <li><a href="#about">Про громаду</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#documents">Документи</a></li>
+            <li><a href="#news">Новини</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Правова інформація</h3>
+          <ul class="footer-list">
+            <li><a href="#contacts">Політика конфіденційності</a></li>
+            <li><a href="#contacts">Закон про захист персональних даних</a></li>
+            <li><a href="#contacts">Контакти для звернень</a></li>
+          </ul>
+          <ul class="social-icons" aria-label="Соціальні мережі">
+            <li>
+              <span class="social-icon" role="img" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6v2h-3v3.2h3V21h3.9z"/></svg>
+              </span>
+            </li>
+            <li>
+              <span class="social-icon" role="img" aria-label="Instagram">
+                <svg class="instagram-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle class="instagram-dot" cx="17.7" cy="6.5" r="1.2"/></svg>
+              </span>
+            </li>
+            <li>
+              <span class="social-icon" role="img" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.4V8.6l5.9 3.4-5.9 3.4z"/></svg>
+              </span>
+            </li>
+            <li>
+              <span class="social-icon" role="img" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.7 4.4-3.3 15.3c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.8 13.2.9 11.7c-1.1-.3-1.1-1.1.2-1.6L20.2 2.7c.9-.3 1.7.2 1.5 1.7z"/></svg>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Дмитрівська сільська територіальна громада</span>
+        <span>Офіційний вебсайт громади</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const body = document.body;
+      const fontButtons = document.querySelectorAll('[data-font-action]');
+      const contrastButton = document.querySelector('[data-contrast-toggle]');
+      const nav = document.querySelector('.main-nav');
+      const menuToggle = document.querySelector('.nav-toggle');
+      const photoSlides = document.querySelectorAll('.photo-slide');
+      const photoSliderStatus = document.querySelector('.photo-slider-status');
+      const photoSliderButtons = document.querySelectorAll('[data-slide-direction]');
+      let activePhotoSlide = 0;
+
+      let fontScale = Number.parseFloat(getComputedStyle(root).getPropertyValue('--font-scale'));
+      const minScale = 0.9;
+      const maxScale = 1.2;
+
+      function applyFontScale() {
+        root.style.setProperty('--font-scale', fontScale.toFixed(2));
+      }
+
+      fontButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const action = button.getAttribute('data-font-action');
+          if (action === 'increase') {
+            fontScale = Math.min(fontScale + 0.1, maxScale);
+          } else {
+            fontScale = Math.max(fontScale - 0.1, minScale);
+          }
+          applyFontScale();
+        });
+      });
+
+      contrastButton.addEventListener('click', function () {
+        const isEnabled = body.classList.toggle('contrast-mode');
+        contrastButton.setAttribute('aria-pressed', String(isEnabled));
+      });
+
+      menuToggle.addEventListener('click', function () {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+        nav.classList.toggle('open', !isExpanded);
+      });
+
+      photoSliderButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const direction = Number(button.getAttribute('data-slide-direction'));
+          activePhotoSlide = (activePhotoSlide + direction + photoSlides.length) % photoSlides.length;
+          photoSlides.forEach(function (slide, index) {
+            slide.hidden = index !== activePhotoSlide;
+          });
+          photoSliderStatus.textContent = (activePhotoSlide + 1) + ' / ' + photoSlides.length;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
