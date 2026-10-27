@@ -18,8 +18,8 @@
     <div class="topbar" aria-label="Панель доступності та контактів">
       <div class="container topbar-inner">
         <div class="header-contact" aria-label="Контакти сільської ради">
-          <small>Гаряча лінія</small>
-          <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+          <small>Телефон ради</small>
+          <a href="tel:+380523370306">+38 (05233) 7-03-06</a>
         </div>
         <div class="topbar-tools" aria-label="Налаштування доступності">
           <button class="topbar-btn" type="button" data-font-action="decrease" aria-label="Зменшити текст">Менший текст</button>
@@ -31,7 +31,7 @@
 
     <div class="container header-inner">
       <a class="brand" href="#main-content" aria-label="Головна сторінка Дмитрівської сільської територіальної громади">
-        <img class="brand-logo" src="logo.png" alt="Герб Дмитрівської сільської територіальної громади">
+        <img class="brand-logo" src="logo%203.png" alt="Герб Дмитрівської сільської територіальної громади">
         <span class="brand-text">
           <span class="brand-name">Дмитрівська сільська територіальна громада</span>
           <span class="brand-caption">Кропивницького району, Кіровоградської області</span>
@@ -41,12 +41,12 @@
       <nav class="main-nav" aria-label="Головна навігація" id="main-nav">
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Відкрити меню навігації">Меню</button>
         <ul class="nav-list" id="site-menu">
+          <li><a href="#announcements">Оголошення</a></li>
           <li><a href="#about">Про громаду</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#documents">Рішення та документи</a></li>
-          <li><a href="#budget">Бюджет</a></li>
-          <li><a href="#news">Новини</a></li>
-          <li><a href="#contacts">Звернення</a></li>
+          <li><a href="#documents">Документи та рішення</a></li>
+          <li><a href="#memory">Книга пам’яті</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="mailto:dss_zn@ukr.net?subject=Звернення%20до%20громади">Звернення</a></li>
         </ul>
       </nav>
     </div>
@@ -75,74 +75,109 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="announcements-title">
+    <section class="section" id="announcements" aria-labelledby="announcements-title">
       <div class="container">
         <div class="section-heading">
           <h2 id="announcements-title">Важливі оголошення</h2>
-          <a class="section-link" href="#news">Усі новини</a>
         </div>
 
-        <div class="notice-grid">
-          <article class="notice-card featured">
-            <span class="notice-meta">Актуально</span>
-            <h3>Графік особистого прийому громадян</h3>
-            <p>Надано новий розклад прийомів у приміщенні ради, а також порядок попередньої реєстрації.</p>
-          </article>
+        <div class="notice-carousel" role="region" aria-label="Важливі оголошення" aria-roledescription="карусель">
+          <div class="notice-grid">
+            <article class="notice-card featured" role="group" aria-roledescription="слайд" aria-label="Оголошення 1 з 4">
+              <h3>Карта укриттів</h3>
+              <img class="notice-image" src="Фото%20важливі%20оголошення/Карта%20укритів.png" alt="Важлива інформація про укриття">
+              <p>Для захисту населення використовуються споруди цивільного захисту: сховища, протирадіаційні та найпростіші укриття.</p>
+              <time class="notice-date" datetime="2022-02-25">25.02.2022</time>
+            </article>
 
-          <article class="notice-card">
-            <span class="notice-meta">Рішення</span>
-            <h3>Оприлюднено рішення ради</h3>
-            <p>Рішення щодо благоустрою, міської інфраструктури та підтримки соціально вразливих категорій громадян.</p>
-          </article>
+            <article class="notice-card" role="group" aria-roledescription="слайд" aria-label="Оголошення 2 з 4">
+              <h3>Оголошується набір у мережу «Амбасадорів безбар’єрності»</h3>
+              <img class="notice-image" src="Фото%20важливі%20оголошення/Амбасадори%20безбар%27єрності.png" alt="Амбасадори безбар’єрності">
+              <p>Дмитрівська сільська рада оголошує набір кандидатів і кандидаток до мережі амбасадорів безбар’єрності.</p>
+              <time class="notice-date" datetime="2026-10-14">14.10.2026</time>
+            </article>
 
-          <article class="notice-card">
-            <span class="notice-meta">Підтримка</span>
-            <h3>Підтримка малого бізнесу</h3>
-            <p>У громади працює новий механізм підтримки підприємців та ініціатив, спрямованих на розвиток села.</p>
-          </article>
+            <article class="notice-card" role="group" aria-roledescription="слайд" aria-label="Оголошення 3 з 4">
+              <h3>Чи може бути збільшено розмір гранту для масштабування власної справи?</h3>
+              <img class="notice-image" src="Фото%20важливі%20оголошення/Розмір%20гранту.png" alt="Інформація про збільшення розміру гранту">
+              <p>Розмір гранту збільшується на 30% для отримувачів на оновлення основних засобів виробництва, знищених чи пошкоджених внаслідок збройної агресії Російської Федерації проти України.</p>
+              <time class="notice-date" datetime="2026-10-06">06.10.2026</time>
+            </article>
+
+            <article class="notice-card" role="group" aria-roledescription="слайд" aria-label="Оголошення 4 з 4">
+              <h3>З Днем учителя, дорогі освітяни!</h3>
+              <img class="notice-image" src="Фото%20важливі%20оголошення/День%20учителя.png" alt="Освітяни громади до Дня вчителя">
+              <p>Дякуємо за щоденну працю, професіоналізм, доброту, терпіння та турботу, які ви даруєте кожній дитині.</p>
+              <time class="notice-date" datetime="2026-10-04">04.10.2026</time>
+            </article>
+          </div>
+          <div class="notice-slider-controls" role="group" aria-label="Керування оголошеннями">
+            <button class="notice-slider-button" type="button" data-notice-direction="-1" aria-label="Попередні оголошення">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <span class="notice-slider-status" aria-live="polite"></span>
+            <button class="notice-slider-button" type="button" data-notice-direction="1" aria-label="Наступні оголошення">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="services-title">
+    <section class="section" id="documents" aria-labelledby="documents-title">
       <div class="container">
         <div class="section-heading">
-          <h2 id="services-title">Популярні послуги</h2>
-          <a class="section-link" href="#documents">Всі послуги</a>
+          <h2 id="documents-title">Документи та рішення</h2>
+          <a class="section-link" href="#document-list">Усі документи</a>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10l3 3v13H7zM14 4v4h5M10 12h6M10 16h6"/></svg>
-            </div>
-            <h3>Довідки</h3>
-            <p>Отримання довідок про особу, житлові, соціальні та інші актуальні питання.</p>
-          </article>
+        <div class="document-carousel" role="region" aria-label="Перелік документів та рішень" aria-roledescription="карусель">
+          <div class="notice-grid document-grid" id="document-list">
+            <article class="notice-card document-card">
+              <h3>Обґрунтування технічних та якісних характеристик предмета закупівлі</h3>
+              <p>Обґрунтування розміру бюджетного призначення та очікуваної вартості закупівлі. Капітальний ремонт житлового приміщення за адресою: площа Перемоги, будинок 18, село Дмитрівка (коригування).</p>
+              <div class="document-card-footer">
+                <span class="document-type">Обґрунтування</span>
+                <time class="notice-date" datetime="2026-10-26">26.10.2026</time>
+              </div>
+            </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 20v-6h6v6"/></svg>
-            </div>
-            <h3>Земельні питання</h3>
-            <p>Консультації щодо земельних ділянок, кадастру, землекористування та дозвільних процедур.</p>
-          </article>
+            <article class="notice-card document-card">
+              <h3>Про затвердження технічної документації із землеустрою</h3>
+              <p>Щодо встановлення (відновлення) меж земельної ділянки в натурі для будівництва й обслуговування житлового будинку, господарських будівель і споруд громадянки Таран Н. В.</p>
+              <div class="document-card-footer">
+                <span class="document-type">Рішення сесії</span>
+                <time class="notice-date" datetime="2026-10-15">15.10.2026</time>
+              </div>
+            </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/></svg>
-            </div>
-            <h3>Податки</h3>
-            <p>Інформація про податкові розрахунки, процедури сплати та актуальні питання для платників.</p>
-          </article>
+            <article class="notice-card document-card">
+              <h3>Про затвердження технічної документації із землеустрою</h3>
+              <p>Щодо встановлення (відновлення) меж земельної ділянки в натурі для будівництва й обслуговування житлового будинку, господарських будівель і споруд громадянина Фрайдун Ф. М.</p>
+              <div class="document-card-footer">
+                <span class="document-type">Рішення сесії</span>
+                <time class="notice-date" datetime="2026-10-15">15.10.2026</time>
+              </div>
+            </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 10h8m-8 4h8M9 5h6l4 4v10H5V5h4Z"/></svg>
-            </div>
-            <h3>Звернення</h3>
-            <p>Подання скарг, пропозицій, заяв та запитів до органів місцевого самоврядування.</p>
-          </article>
+            <article class="notice-card document-card">
+              <h3>Про затвердження технічної документації із землеустрою</h3>
+              <p>Щодо встановлення (відновлення) меж земельної ділянки в натурі для будівництва й обслуговування житлового будинку, господарських будівель і споруд громадянина Ядвик А. О.</p>
+              <div class="document-card-footer">
+                <span class="document-type">Рішення сесії</span>
+                <time class="notice-date" datetime="2026-10-15">15.10.2026</time>
+              </div>
+            </article>
+          </div>
+          <div class="notice-slider-controls" role="group" aria-label="Керування переліком документів">
+            <button class="notice-slider-button" type="button" data-document-direction="-1" aria-label="Попередні документи">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <span class="notice-slider-status" aria-live="polite" data-document-status></span>
+            <button class="notice-slider-button" type="button" data-document-direction="1" aria-label="Наступні документи">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -151,133 +186,128 @@
       <div class="container">
         <div class="section-heading">
           <h2 id="about-title">Про громаду</h2>
-          <a class="section-link" href="#contacts">Контакти</a>
+          <a class="section-link" href="contacts.html">Контакти</a>
         </div>
 
         <div class="lead-grid">
-          <article class="lead-card lead-feature">
-            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=80" alt="Будівля сільської ради серед зелених насаджень">
+          <article class="lead-card community-card">
             <div class="lead-body">
-              <span class="lead-badge">Керівництво</span>
-              <h3>Розвиток громади — у руках людей</h3>
-              <p>Ми працюємо відповідально, відкрито та системно, аби забезпечити мешканцям якісні послуги, стабільну роботу інфраструктури та прозорий розвиток усього територіального об'єднання.</p>
+              <span class="lead-badge">Дмитрівська громада</span>
+              <h3>Про громаду</h3>
+              <p>Дмитрівська сільська територіальна громада розташована у Кропивницькому районі Кіровоградської області. Адміністративний центр — село Дмитрівка.</p>
+              <dl class="community-details">
+                <div>
+                  <dt>Адреса ради</dt>
+                  <dd>площа Перемоги, 4, село Дмитрівка</dd>
+                </div>
+                <div>
+                  <dt>Електронна пошта</dt>
+                  <dd><a href="mailto:dss_zn@ukr.net">dss_zn@ukr.net</a></dd>
+                </div>
+              </dl>
+              <a class="source-link" href="https://dmitrovka-otg.gov.ua/contacts" target="_blank" rel="noopener noreferrer">Населені пункти та контакти громади <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
-          <aside class="news-card" aria-label="Останні новини">
-            <div class="news-list">
-              <article class="news-item">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Люди працюють разом над спільним проєктом">
-                <div>
-                  <span class="date">08 жовтня</span>
-                  <h4>Партнерство для розвитку освітніх ініціатив</h4>
-                </div>
-              </article>
-
-              <article class="news-item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Громадська будівля та сучасна інфраструктура">
-                <div>
-                  <span class="date">03 жовтня</span>
-                  <h4>Розширення комунальної інфраструктури</h4>
-                </div>
-              </article>
-
-              <article class="news-item">
-                <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=700&q=80" alt="Жінки та чоловіки на відкритій зустрічі громади">
-                <div>
-                  <span class="date">29 вересня</span>
-                  <h4>Обговорення пріоритетів розвитку громади</h4>
-                </div>
-              </article>
+          <article class="lead-card leader-card">
+            <div class="leader-initials" aria-hidden="true">НС</div>
+            <div class="lead-body">
+              <h3>Керівництво</h3>
+              <p class="leader-name">Наталія Євстафіївна Стиркуль</p>
+              <p class="leader-title">Голова Дмитрівської сільської територіальної громади</p>
+              <p>Публічні матеріали описують її професійний шлях від секретаря сільського голови до голови громади. В інтерв’ю 2025 року Наталія Стиркуль розповідала про підтримку військових і їхніх родин, розвиток соціальних послуг, безбар’єрність та партнерства громади.</p>
             </div>
-          </aside>
+          </article>
         </div>
+
       </div>
     </section>
 
-    <section class="section" id="documents" aria-labelledby="documents-title">
+    <section class="section memory-section" id="memory" aria-labelledby="memory-title">
       <div class="container">
-        <div class="section-heading">
-          <h2 id="documents-title">Рішення та документи</h2>
-          <a class="section-link" href="#budget">Бюджет</a>
-        </div>
-
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>План роботи</h3>
-            <p>Планові документи, пріоритети розвитку та маршрути реалізації проєктів громади.</p>
-          </article>
-          <article class="doc-card">
-            <h3>Публічні рішення</h3>
-            <p>Відкриті рішення ради, розпорядження, постанови та регуляторні акти.</p>
-          </article>
-          <article class="doc-card" id="budget">
-            <h3>Бюджет громади</h3>
-            <p>Фінансові плани, звіти, бюджети та розпорядження щодо використання коштів громади.</p>
-          </article>
+        <div class="memory-content">
+          <div class="section-heading">
+            <h2 id="memory-title">Книга пам’яті</h2>
+          </div>
+          <div class="memory-carousel" role="region" aria-label="Книга пам’яті" aria-roledescription="карусель">
+            <div class="memory-slides">
+              <figure class="memory-slide" role="group" aria-roledescription="слайд" aria-label="1 з 4">
+                <img src="Книга%20пам%27яті/Агафонов%20А.%20С..png?v=20261027" alt="Агафонов Андрій Сергійович — вічна пам’ять герою">
+              </figure>
+              <figure class="memory-slide" role="group" aria-roledescription="слайд" aria-label="2 з 4" hidden>
+                <img src="Книга%20пам%27яті/Булгару%20В%20Г..png?v=20261027" alt="Булгару В’ячеслав Георгійович — пам’ятаємо">
+              </figure>
+              <figure class="memory-slide" role="group" aria-roledescription="слайд" aria-label="3 з 4" hidden>
+                <img src="Книга%20пам%27яті/Лапковський%20Д.%20І..png?v=20261027" alt="Лапковський Дмитро Іванович — пам’ятаємо">
+              </figure>
+              <figure class="memory-slide" role="group" aria-roledescription="слайд" aria-label="4 з 4" hidden>
+                <img src="Книга%20пам%27яті/Щур%20А.%20Л..png?v=20261027" alt="Щур Андрій Леонідович — світла пам’ять">
+              </figure>
+            </div>
+            <div class="memory-controls" role="group" aria-label="Перемикання фотографій Книги пам’яті">
+              <button class="memory-button" type="button" data-memory-direction="-1" aria-label="Попередня сторінка">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <span class="memory-status" aria-live="polite">1 / 2</span>
+              <button class="memory-button" type="button" data-memory-direction="1" aria-label="Наступна сторінка">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="public-service-carousel" role="region" aria-label="Державні організації та сервіси" aria-roledescription="карусель">
+            <div class="notice-grid public-service-track">
+              <a class="notice-card public-service-card" href="https://diia.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="1 з 4 — Дія">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>Дія</h3>
+                <p>Державні послуги онлайн — зручно та в одному місці.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+              <a class="notice-card public-service-card" href="https://dsns.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="2 з 4 — ДСНС України">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>ДСНС України</h3>
+                <p>Офіційні повідомлення та рекомендації з безпеки.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+              <a class="notice-card public-service-card" href="https://www.pfu.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="3 з 4 — Пенсійний фонд України">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>Пенсійний фонд України</h3>
+                <p>Пенсійні та соціальні послуги й інформація для громадян.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+              <a class="notice-card public-service-card" href="https://tax.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="4 з 4 — Державна податкова служба">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>Державна податкова служба</h3>
+                <p>Податкова інформація та електронні сервіси для платників.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+              <a class="notice-card public-service-card" href="https://mva.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="5 з 6 — Міністерство у справах ветеранів України">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>Міністерство у справах ветеранів України</h3>
+                <p>Інформація про державну підтримку ветеранів та їхніх родин.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+              <a class="notice-card public-service-card" href="https://dcz.gov.ua/" target="_blank" rel="noopener noreferrer" role="group" aria-label="6 з 6 — Державна служба зайнятості">
+                <img class="notice-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80" alt="">
+                <h3>Державна служба зайнятості</h3>
+                <p>Послуги з працевлаштування, пошуку роботи та професійного навчання.</p>
+                <span class="public-service-link">Відвідати офіційний сайт →</span>
+              </a>
+            </div>
+            <div class="notice-slider-controls public-service-controls" role="group" aria-label="Керування стрічкою державних сервісів">
+              <button class="notice-slider-button" type="button" data-public-service-direction="-1" aria-label="Попередні організації">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <span class="notice-slider-status public-service-status" aria-live="off">1–3 / 6</span>
+              <button class="notice-slider-button" type="button" data-public-service-direction="1" aria-label="Наступні організації">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <button class="public-service-toggle" type="button" aria-label="Призупинити автоматичне перемикання" aria-pressed="false">Пауза</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="call-title">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <p class="eyebrow" style="color: var(--accent); margin-bottom: 12px;">Оперативно</p>
-            <h2 id="call-title">Публічна інформація та звернення громадян</h2>
-            <p>Ми відкриті до діалогу, оперативно надаємо інформацію та забезпечуємо прозорий механізм взаємодії з мешканцями.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="button secondary" href="#contacts">Подати звернення</a>
-            <a class="button" href="#documents">Переглянути документи</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contacts" aria-labelledby="contacts-title">
-      <div class="container contact-grid">
-        <article class="contact-card">
-          <h3 id="contacts-title">Контакти та прийом громадян</h3>
-          <div class="contact-list">
-            <div class="contact-row">
-              <strong>Адреса</strong>
-              <span>с. Дмитрівка, Кропивницький район, Кіровоградська область</span>
-            </div>
-            <div class="contact-row">
-              <strong>Телефон</strong>
-              <a href="tel:+380000000000">+38 (000) 000-00-00</a>
-            </div>
-            <div class="contact-row">
-              <strong>E-mail</strong>
-              <a href="mailto:rada@example.ua">rada@example.ua</a>
-            </div>
-            <div class="contact-row">
-              <strong>Графік роботи</strong>
-              <span>Пн–Чт: 08:00–17:00, Пт: 08:00–16:00, обід: 12:00–13:00</span>
-            </div>
-          </div>
-        </article>
-
-        <aside class="contact-card" aria-label="Онлайн звернення">
-          <h3>Звернення громадян</h3>
-          <div class="contact-list">
-            <div class="contact-row">
-              <strong>Онлайн</strong>
-              <a href="#contacts">Подати звернення</a>
-            </div>
-            <div class="contact-row">
-              <strong>Особисто</strong>
-              <span>Особистий прийом проводиться за попередньою домовленістю.</span>
-            </div>
-            <div class="contact-row">
-              <strong>Доступність</strong>
-              <a href="#main-content">Перейти до основного вмісту</a>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
@@ -285,7 +315,7 @@
       <div class="footer-main">
         <div>
           <div class="footer-brand">
-            <img class="brand-logo" src="logo.png" alt="Герб Дмитрівської сільської територіальної громади">
+            <img class="brand-logo" src="logo%203.png" alt="Герб Дмитрівської сільської територіальної громади">
             <div class="brand-text">
               <span class="brand-name">Дмитрівська сільська територіальна громада</span>
             </div>
@@ -296,25 +326,27 @@
         <div>
           <h3 class="footer-title">Навігація</h3>
           <ul class="footer-list">
+            <li><a href="#announcements">Оголошення</a></li>
             <li><a href="#about">Про громаду</a></li>
-            <li><a href="#services">Послуги</a></li>
-            <li><a href="#documents">Документи</a></li>
-            <li><a href="#news">Новини</a></li>
+            <li><a href="#documents">Документи та рішення</a></li>
+            <li><a href="#memory">Книга пам’яті</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="footer-title">Правова інформація</h3>
           <ul class="footer-list">
-            <li><a href="#contacts">Політика конфіденційності</a></li>
-            <li><a href="#contacts">Закон про захист персональних даних</a></li>
-            <li><a href="#contacts">Контакти для звернень</a></li>
+            <li>Політика конфіденційності</li>
+            <li>Закон про захист персональних даних</li>
+            <li><a href="contacts.html">Контакти громади</a></li>
+            <li><a href="mailto:dss_zn@ukr.net?subject=Звернення%20до%20громади">Написати звернення</a></li>
           </ul>
           <ul class="social-icons" aria-label="Соціальні мережі">
             <li>
-              <span class="social-icon" role="img" aria-label="Facebook">
+              <a class="social-icon" href="https://www.facebook.com/DmytrivskaOTG/" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6v2h-3v3.2h3V21h3.9z"/></svg>
-              </span>
+              </a>
             </li>
             <li>
               <span class="social-icon" role="img" aria-label="Instagram">
@@ -353,7 +385,31 @@
       const photoSlides = document.querySelectorAll('.photo-slide');
       const photoSliderStatus = document.querySelector('.photo-slider-status');
       const photoSliderButtons = document.querySelectorAll('[data-slide-direction]');
+      const noticeTrack = document.querySelector('.notice-grid');
+      const noticeCards = noticeTrack.querySelectorAll('.notice-card');
+      const noticeSliderStatus = document.querySelector('.notice-slider-status');
+      const noticeSliderButtons = document.querySelectorAll('[data-notice-direction]');
+      const documentTrack = document.querySelector('.document-grid');
+      const documentCards = documentTrack.querySelectorAll('.document-card');
+      const documentSliderStatus = document.querySelector('[data-document-status]');
+      const documentSliderButtons = document.querySelectorAll('[data-document-direction]');
+      const memorySlides = document.querySelectorAll('.memory-slide');
+      const memoryStatus = document.querySelector('.memory-status');
+      const memoryButtons = document.querySelectorAll('[data-memory-direction]');
+      const publicServiceRibbon = document.querySelector('.public-service-carousel');
+      const publicServiceTrack = document.querySelector('.public-service-track');
+      const publicServiceSlides = publicServiceTrack.querySelectorAll('.public-service-card');
+      const publicServiceStatus = document.querySelector('.public-service-status');
+      const publicServiceButtons = document.querySelectorAll('[data-public-service-direction]');
+      const publicServiceToggle = document.querySelector('.public-service-toggle');
       let activePhotoSlide = 0;
+      let activeMemoryPage = 0;
+      let activePublicServiceStart = 0;
+      let publicServiceTimer = null;
+      let publicServicePaused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let publicServiceInteractionPaused = false;
+      const memorySlidesPerPage = 2;
+      const memoryPageCount = Math.ceil(memorySlides.length / memorySlidesPerPage);
 
       let fontScale = Number.parseFloat(getComputedStyle(root).getPropertyValue('--font-scale'));
       const minScale = 0.9;
@@ -386,6 +442,13 @@
         nav.classList.toggle('open', !isExpanded);
       });
 
+      nav.querySelectorAll('.nav-list a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('open');
+        });
+      });
+
       photoSliderButtons.forEach(function (button) {
         button.addEventListener('click', function () {
           const direction = Number(button.getAttribute('data-slide-direction'));
@@ -396,6 +459,201 @@
           photoSliderStatus.textContent = (activePhotoSlide + 1) + ' / ' + photoSlides.length;
         });
       });
+
+      function getNoticeSliderPosition() {
+        const styles = getComputedStyle(noticeTrack);
+        const gap = Number.parseFloat(styles.columnGap) || 0;
+        const cardWidth = noticeCards[0].getBoundingClientRect().width;
+        const step = cardWidth + gap;
+        const visibleCount = Math.max(1, Math.floor((noticeTrack.clientWidth + gap) / step));
+        const lastIndex = Math.max(0, noticeCards.length - visibleCount);
+        const currentIndex = Math.min(lastIndex, Math.round(noticeTrack.scrollLeft / step));
+
+        return { step, visibleCount, lastIndex, currentIndex };
+      }
+
+      function updateNoticeSlider() {
+        const position = getNoticeSliderPosition();
+        const lastVisibleIndex = Math.min(position.currentIndex + position.visibleCount, noticeCards.length);
+
+        noticeSliderStatus.textContent = (position.currentIndex + 1) + '–' + lastVisibleIndex + ' / ' + noticeCards.length;
+        noticeSliderButtons.forEach(function (button) {
+          const direction = Number(button.getAttribute('data-notice-direction'));
+          button.disabled = direction < 0 ? position.currentIndex === 0 : position.currentIndex === position.lastIndex;
+        });
+      }
+
+      noticeSliderButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const position = getNoticeSliderPosition();
+          const direction = Number(button.getAttribute('data-notice-direction'));
+          const targetIndex = Math.max(0, Math.min(position.lastIndex, position.currentIndex + direction));
+          const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          noticeTrack.scrollTo({
+            left: targetIndex * position.step,
+            behavior: reducedMotion ? 'auto' : 'smooth'
+          });
+        });
+      });
+
+      noticeTrack.addEventListener('scroll', updateNoticeSlider);
+      window.addEventListener('resize', updateNoticeSlider);
+      updateNoticeSlider();
+
+      function getDocumentSliderPosition() {
+        const styles = getComputedStyle(documentTrack);
+        const gap = Number.parseFloat(styles.columnGap) || 0;
+        const cardWidth = documentCards[0].getBoundingClientRect().width;
+        const step = cardWidth + gap;
+        const visibleCount = Math.max(1, Math.floor((documentTrack.clientWidth + gap) / step));
+        const lastIndex = Math.max(0, documentCards.length - visibleCount);
+        const currentIndex = Math.min(lastIndex, Math.round(documentTrack.scrollLeft / step));
+
+        return { step, visibleCount, lastIndex, currentIndex };
+      }
+
+      function updateDocumentSlider() {
+        const position = getDocumentSliderPosition();
+        const lastVisibleIndex = Math.min(position.currentIndex + position.visibleCount, documentCards.length);
+
+        documentSliderStatus.textContent = (position.currentIndex + 1) + '–' + lastVisibleIndex + ' / ' + documentCards.length;
+        documentSliderButtons.forEach(function (button) {
+          const direction = Number(button.getAttribute('data-document-direction'));
+          button.disabled = direction < 0 ? position.currentIndex === 0 : position.currentIndex === position.lastIndex;
+        });
+      }
+
+      documentSliderButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const position = getDocumentSliderPosition();
+          const direction = Number(button.getAttribute('data-document-direction'));
+          const targetIndex = Math.max(0, Math.min(position.lastIndex, position.currentIndex + direction));
+          const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          documentTrack.scrollTo({
+            left: targetIndex * position.step,
+            behavior: reducedMotion ? 'auto' : 'smooth'
+          });
+        });
+      });
+
+      documentTrack.addEventListener('scroll', updateDocumentSlider);
+      window.addEventListener('resize', updateDocumentSlider);
+      updateDocumentSlider();
+
+      function showMemoryPage(page) {
+        activeMemoryPage = page;
+        memorySlides.forEach(function (slide, index) {
+          slide.hidden = Math.floor(index / memorySlidesPerPage) !== activeMemoryPage;
+        });
+        memoryStatus.textContent = (activeMemoryPage + 1) + ' / ' + memoryPageCount;
+      }
+
+      showMemoryPage(activeMemoryPage);
+
+      memoryButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const direction = Number(button.getAttribute('data-memory-direction'));
+          showMemoryPage((activeMemoryPage + direction + memoryPageCount) % memoryPageCount);
+        });
+      });
+
+      function getPublicServicePosition() {
+        const styles = getComputedStyle(publicServiceTrack);
+        const gap = Number.parseFloat(styles.columnGap) || 0;
+        const cardWidth = publicServiceSlides[0].getBoundingClientRect().width;
+        const step = cardWidth + gap;
+        const visibleCount = Math.max(1, Math.floor((publicServiceTrack.clientWidth + gap) / step));
+        const lastIndex = Math.max(0, publicServiceSlides.length - visibleCount);
+        const currentIndex = Math.min(lastIndex, Math.round(publicServiceTrack.scrollLeft / step));
+
+        return { step, visibleCount, lastIndex, currentIndex };
+      }
+
+      function updatePublicServiceStatus() {
+        const position = getPublicServicePosition();
+        const lastVisibleIndex = Math.min(position.currentIndex + position.visibleCount, publicServiceSlides.length);
+        activePublicServiceStart = position.currentIndex;
+        publicServiceStatus.textContent = (position.currentIndex + 1) + '–' + lastVisibleIndex + ' / ' + publicServiceSlides.length;
+      }
+
+      function showPublicServiceSlide(index) {
+        const position = getPublicServicePosition();
+        activePublicServiceStart = Math.max(0, Math.min(position.lastIndex, index));
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        publicServiceTrack.scrollTo({
+          left: activePublicServiceStart * position.step,
+          behavior: reducedMotion ? 'auto' : 'smooth'
+        });
+      }
+
+      function updatePublicServiceTimer() {
+        window.clearInterval(publicServiceTimer);
+        publicServiceTimer = null;
+        if (!publicServicePaused && !publicServiceInteractionPaused && !document.hidden) {
+          publicServiceTimer = window.setInterval(function () {
+            const position = getPublicServicePosition();
+            showPublicServiceSlide(position.currentIndex === position.lastIndex ? 0 : position.currentIndex + position.visibleCount);
+          }, 7000);
+        }
+      }
+
+      function updatePublicServiceToggle() {
+        publicServiceToggle.setAttribute('aria-pressed', String(publicServicePaused));
+        publicServiceToggle.setAttribute(
+          'aria-label',
+          publicServicePaused ? 'Увімкнути автоматичне перемикання' : 'Призупинити автоматичне перемикання'
+        );
+        publicServiceToggle.textContent = publicServicePaused ? 'Продовжити' : 'Пауза';
+      }
+
+      publicServiceButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const position = getPublicServicePosition();
+          const direction = Number(button.getAttribute('data-public-service-direction'));
+          const pageCount = Math.ceil(publicServiceSlides.length / position.visibleCount);
+          const currentPage = Math.round(position.currentIndex / position.visibleCount);
+          const targetPage = (currentPage + direction + pageCount) % pageCount;
+          const targetIndex = Math.min(targetPage * position.visibleCount, position.lastIndex);
+          showPublicServiceSlide(targetIndex);
+          updatePublicServiceTimer();
+        });
+      });
+
+      publicServiceToggle.addEventListener('click', function () {
+        publicServicePaused = !publicServicePaused;
+        updatePublicServiceToggle();
+        updatePublicServiceTimer();
+      });
+
+      publicServiceRibbon.addEventListener('mouseenter', function () {
+        publicServiceInteractionPaused = true;
+        updatePublicServiceTimer();
+      });
+      publicServiceRibbon.addEventListener('mouseleave', function () {
+        publicServiceInteractionPaused = false;
+        updatePublicServiceTimer();
+      });
+      publicServiceRibbon.addEventListener('focusin', function () {
+        publicServiceInteractionPaused = true;
+        updatePublicServiceTimer();
+      });
+      publicServiceRibbon.addEventListener('focusout', function (event) {
+        if (!publicServiceRibbon.contains(event.relatedTarget)) {
+          publicServiceInteractionPaused = false;
+          updatePublicServiceTimer();
+        }
+      });
+      document.addEventListener('visibilitychange', updatePublicServiceTimer);
+
+      publicServiceTrack.addEventListener('scroll', updatePublicServiceStatus);
+      window.addEventListener('resize', updatePublicServiceStatus);
+      updatePublicServiceStatus();
+      updatePublicServiceToggle();
+      updatePublicServiceTimer();
+
     })();
   </script>
 </body>

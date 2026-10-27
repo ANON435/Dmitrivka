@@ -1,0 +1,143 @@
+.contacts-page .section-heading h1 {
+  max-width: none;
+  margin: 0;
+  font: 800 calc(30px * var(--font-scale))/1.2 "Manrope", sans-serif;
+}
+
+.contacts-page .section {
+  min-height: calc(100vh - 490px);
+}
+
+.contacts-intro {
+  margin: -8px 0 24px;
+  color: var(--muted);
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-card,
+.settlements-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.contact-card {
+  padding: 24px;
+}
+
+.contact-card h2,
+.settlements-card h2 {
+  margin: 0 0 14px;
+  font: 800 calc(21px * var(--font-scale))/1.25 "Manrope", sans-serif;
+}
+
+.contact-primary {
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.contact-muted {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-details,
+.hours-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.contact-details > div,
+.hours-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-details dt,
+.hours-list dt {
+  color: var(--muted);
+}
+
+.contact-details dd,
+.hours-list dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.contact-details a {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-action {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 8px;
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.settlements-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 24px;
+}
+
+.settlements-card h2 {
+  margin: 12px 0 8px;
+}
+
+.settlements-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.settlement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settlement-list li {
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-alt);
+  font-size: calc(14px * var(--font-scale));
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .contacts-grid,
+  .settlements-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-card,
+  .settlements-card {
+    padding: 20px;
+  }
+}
