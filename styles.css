@@ -811,6 +811,13 @@ h1 {
   .button { width: 100%; }
   .notice-card { flex-basis: 100%; }
   .memory-slides { grid-template-columns: minmax(0, 1fr); }
+  .memory-slide { aspect-ratio: auto; }
+  .memory-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+  }
   .leader-card .lead-body {
     padding: 116px 20px 20px;
   }
