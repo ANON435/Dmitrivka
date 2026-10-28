@@ -508,8 +508,11 @@ h1 {
   display: flex;
 }
 .leader-card {
-  position: relative;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(140px, 0.65fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
 }
 .lead-body {
   padding: 24px;
@@ -556,21 +559,19 @@ h1 {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.leader-card .lead-body {
-  padding-left: 120px;
-}
-.leader-initials {
-  position: absolute;
-  top: 24px;
-  left: 24px;
+.leader-photo-placeholder {
   display: grid;
-  width: 72px;
-  height: 72px;
+  width: 100%;
+  min-height: 220px;
+  aspect-ratio: 4 / 5;
   place-items: center;
-  border-radius: 50%;
-  background: var(--primary);
-  color: var(--surface);
-  font: 800 calc(24px * var(--font-scale))/1 "Manrope", sans-serif;
+  padding: 16px;
+  border: 1px dashed var(--secondary);
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--muted);
+  text-align: center;
+  font-size: calc(14px * var(--font-scale));
 }
 .lead-body .leader-title {
   margin: 0 0 12px;
@@ -818,9 +819,17 @@ h1 {
     max-height: 70vh;
     object-fit: contain;
   }
-  .leader-card .lead-body {
-    padding: 116px 20px 20px;
+  .leader-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 20px;
   }
+  .leader-photo-placeholder {
+    width: min(100%, 220px);
+    min-height: 0;
+    justify-self: center;
+  }
+  .leader-card .lead-body { padding: 0; }
   .section-heading {
     flex-direction: column;
     align-items: flex-start;
