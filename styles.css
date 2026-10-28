@@ -508,6 +508,7 @@ h1 {
   display: flex;
 }
 .leader-card {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: minmax(140px, 0.65fr) minmax(0, 1fr);
   align-items: center;
