@@ -408,8 +408,12 @@
       let publicServiceTimer = null;
       let publicServicePaused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let publicServiceInteractionPaused = false;
-      const memorySlidesPerPage = 2;
-      const memoryPageCount = Math.ceil(memorySlides.length / memorySlidesPerPage);
+      function getMemorySlidesPerPage() {
+        return window.matchMedia('(max-width: 640px)').matches ? 1 : 2;
+      }
+
+      let memorySlidesPerPage = getMemorySlidesPerPage();
+      let memoryPageCount = Math.ceil(memorySlides.length / memorySlidesPerPage);
 
       let fontScale = Number.parseFloat(getComputedStyle(root).getPropertyValue('--font-scale'));
       const minScale = 0.9;
@@ -543,7 +547,7 @@
       updateDocumentSlider();
 
       function showMemoryPage(page) {
-        activeMemoryPage = page;
+        activeMemoryPage = Math.max(0, Math.min(memoryPageCount - 1, page));
         memorySlides.forEach(function (slide, index) {
           slide.hidden = Math.floor(index / memorySlidesPerPage) !== activeMemoryPage;
         });
@@ -551,6 +555,18 @@
       }
 
       showMemoryPage(activeMemoryPage);
+
+      window.addEventListener('resize', function () {
+        const nextSlidesPerPage = getMemorySlidesPerPage();
+        if (nextSlidesPerPage === memorySlidesPerPage) {
+          return;
+        }
+
+        const firstVisibleSlide = activeMemoryPage * memorySlidesPerPage;
+        memorySlidesPerPage = nextSlidesPerPage;
+        memoryPageCount = Math.ceil(memorySlides.length / memorySlidesPerPage);
+        showMemoryPage(Math.floor(firstVisibleSlide / memorySlidesPerPage));
+      });
 
       memoryButtons.forEach(function (button) {
         button.addEventListener('click', function () {

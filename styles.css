@@ -810,6 +810,7 @@ h1 {
   .site-header .brand-caption { font-size: calc(16px * var(--font-scale)); }
   .button { width: 100%; }
   .notice-card { flex-basis: 100%; }
+  .memory-slides { grid-template-columns: minmax(0, 1fr); }
   .leader-card .lead-body {
     padding: 116px 20px 20px;
   }
