@@ -409,7 +409,7 @@
       let publicServicePaused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let publicServiceInteractionPaused = false;
       function getMemorySlidesPerPage() {
-        return window.matchMedia('(max-width: 640px)').matches ? 1 : 2;
+        return window.matchMedia('(max-width: 640px), (pointer: coarse)').matches ? 1 : 2;
       }
 
       let memorySlidesPerPage = getMemorySlidesPerPage();

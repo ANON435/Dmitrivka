@@ -802,7 +802,7 @@ h1 {
   .cta-actions { justify-content: flex-start; }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (pointer: coarse) {
   .topbar-inner { flex-wrap: wrap; }
   .site-header .brand { justify-self: center; }
   .site-header .brand-logo { width: 160px; height: 190px; }
